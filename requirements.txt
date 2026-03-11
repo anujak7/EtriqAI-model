@@ -1,0 +1,10 @@
+azure-cognitiveservices-speech
+openai
+python-dotenv
+fastapi
+uvicorn
+python-multipart
+sounddevice
+soundfile
+numpy
+pydantic
