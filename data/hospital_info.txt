@@ -1,0 +1,28 @@
+Hospital Name: Etriq Multispeciality Hospital
+Location: Block C, Medical District, University Area.
+
+Departments:
+- General Medicine: 9:00 AM - 5:00 PM
+- Pediatrics: 10:00 AM - 4:00 PM
+- Orthopedics: 11:00 AM - 6:00 PM
+- Emergency/Trauma: 24/7
+
+Appointment Process:
+1. Patients can book via website, app, or at the reception.
+2. Required details: Name, Age, Contact, and Preferred Specialty.
+3. Consultation fees must be paid at the counter before the visit.
+
+Services:
+- 24/7 Pharmacy
+- Diagnostic Lab (Blood tests, X-ray, MRI)
+- Ambulance service (Ext 102)
+
+Rules for Visitors:
+- Visiting hours: 4:00 PM - 6:00 PM.
+- Only one attendant allowed per patient.
+- Maintain silence in the hospital premises.
+
+Contact:
+Reception: Ext 101
+Emergency: 011-23456789
+Ambulance: 999

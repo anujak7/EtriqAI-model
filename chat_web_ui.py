@@ -167,7 +167,7 @@ HTML_PAGE = """<!doctype html>
       <h1 class="logo">EtriqAI</h1>
       <div class="info-card">
         <h3>Role</h3>
-        <p>Hostel Receptionist</p>
+        <p>Hospital Receptionist</p>
       </div>
       <div class="info-card">
         <h3>Status</h3>
@@ -181,7 +181,7 @@ HTML_PAGE = """<!doctype html>
     </div>
     <div class="main-chat">
       <div class="chat-box" id="chat-box">
-        <div class="message bot-message">Namaste! I am your Etriq Hostel Receptionist. How can I help you today? | नमस्ते! मैं आपका एट्रिक हॉस्टल रिसेप्शनिस्ट हूं। आज मैं आपकी क्या मदद कर सकता हूं?</div>
+        <div class="message bot-message">Namaste! I am your Etriq Hospital Receptionist. How can I help you today? | नमस्ते! मैं आपका एट्रिक हॉस्पिटल रिसेप्शनिस्ट हूं। आज मैं आपकी क्या मदद कर सकता हूं?</div>
       </div>
       <div class="controls">
         <div id="status-text" style="color: var(--accent); font-size: 0.9rem; text-align: center;">Press the button and start talking</div>
@@ -251,7 +251,7 @@ HTML_PAGE = """<!doctype html>
     }
 
     async function sendRequest(text) {
-      statusText.textContent = "Hostel Receptionist is thinking...";
+      statusText.textContent = "Hospital Receptionist is thinking...";
       try {
         const response = await fetch('http://localhost:8000/chat/text', {
           method: 'POST',
