@@ -7,16 +7,23 @@ load_dotenv()
 class GrokLLMService:
     def __init__(self):
         self.api_key = os.getenv("GROK_API_KEY")
-        self.base_url = "https://api.x.ai/v1"
+        
+        # Detecting if it's a Grok (x.ai) or Groq key
+        if self.api_key and self.api_key.startswith("gsk_"):
+            print("Groq key detected. Using Groq speed-optimized endpoint.")
+            self.base_url = "https://api.groq.com/openai/v1"
+            self.model = "llama-3.3-70b-versatile" # Premium fast model for empathy
+        else:
+            self.base_url = "https://api.x.ai/v1"
+            self.model = "grok-beta"
         
         if not self.api_key:
-            print("Warning: Grok API key not found in environment variables.")
+            print("Warning: API key not found in environment variables.")
         
         self.client = OpenAI(
             api_key=self.api_key,
             base_url=self.base_url,
         )
-        self.model = "grok-beta" # or another grok model
 
     def get_response(self, system_prompt, user_query, history=None):
         if history is None:
